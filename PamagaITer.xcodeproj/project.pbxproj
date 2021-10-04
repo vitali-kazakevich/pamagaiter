@@ -52,11 +52,10 @@
 		752B4494270AC980005C7BDF /* PamagaITer */ = {
 			isa = PBXGroup;
 			children = (
-				752B4495270AC980005C7BDF /* PamagaITerApp.swift */,
-				752B4497270AC980005C7BDF /* ContentView.swift */,
-				752B4499270AC982005C7BDF /* Assets.xcassets */,
 				752B449E270AC982005C7BDF /* Info.plist */,
-				752B449B270AC982005C7BDF /* Preview Content */,
+				752B44A5270AC98E005C7BDF /* Main menu */,
+				752B44A4270AC989005C7BDF /* App */,
+				752B4497270AC980005C7BDF /* ContentView.swift */,
 			);
 			path = PamagaITer;
 			sourceTree = "<group>";
@@ -67,6 +66,23 @@
 				752B449C270AC982005C7BDF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		752B44A4270AC989005C7BDF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				752B4499270AC982005C7BDF /* Assets.xcassets */,
+				752B449B270AC982005C7BDF /* Preview Content */,
+				752B4495270AC980005C7BDF /* PamagaITerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		752B44A5270AC98E005C7BDF /* Main menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Main menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"PamagaITer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PamagaITer/App/Preview Content\"";
 				DEVELOPMENT_TEAM = 9U782S4875;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PamagaITer/Info.plist;
@@ -290,7 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"PamagaITer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PamagaITer/App/Preview Content\"";
 				DEVELOPMENT_TEAM = 9U782S4875;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PamagaITer/Info.plist;
