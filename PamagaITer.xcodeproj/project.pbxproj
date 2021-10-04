@@ -8,18 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		752B4496270AC980005C7BDF /* PamagaITerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B4495270AC980005C7BDF /* PamagaITerApp.swift */; };
-		752B4498270AC980005C7BDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B4497270AC980005C7BDF /* ContentView.swift */; };
 		752B449A270AC982005C7BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752B4499270AC982005C7BDF /* Assets.xcassets */; };
 		752B449D270AC982005C7BDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752B449C270AC982005C7BDF /* Preview Assets.xcassets */; };
+		752B44A7270ACE66005C7BDF /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44A6270ACE66005C7BDF /* MainMenuView.swift */; };
+		752B44AA270ACE8B005C7BDF /* StartInterviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44A9270ACE8B005C7BDF /* StartInterviewView.swift */; };
+		752B44AC270ACE9E005C7BDF /* StartInterviewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44AB270ACE9E005C7BDF /* StartInterviewContract.swift */; };
+		752B44AE270ACEAE005C7BDF /* StartInterviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44AD270ACEAE005C7BDF /* StartInterviewViewModel.swift */; };
+		752B44B1270AD08F005C7BDF /* StartInterviewInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44B0270AD08F005C7BDF /* StartInterviewInputView.swift */; };
+		752B44B4270AD2C1005C7BDF /* StartInterviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44B3270AD2C1005C7BDF /* StartInterviewRouter.swift */; };
+		752B44B7270AE0A7005C7BDF /* InterviewQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44B6270AE0A7005C7BDF /* InterviewQuestionsView.swift */; };
+		752B44BA270B0C23005C7BDF /* StartInterviewInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44B9270B0C23005C7BDF /* StartInterviewInputViewModel.swift */; };
+		752B44BC270B12D2005C7BDF /* InterviewQuestionsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44BB270B12D2005C7BDF /* InterviewQuestionsContract.swift */; };
+		752B44BE270B12E3005C7BDF /* InterviewQuestionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44BD270B12E3005C7BDF /* InterviewQuestionsRouter.swift */; };
+		752B44C0270B12F4005C7BDF /* InterviewQuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44BF270B12F4005C7BDF /* InterviewQuestionsViewModel.swift */; };
+		752B44C2270B1317005C7BDF /* MainMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44C1270B1317005C7BDF /* MainMenuRouter.swift */; };
+		752B44C6270B1663005C7BDF /* AppServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44C5270B1663005C7BDF /* AppServiceContainer.swift */; };
+		752B44C9270B1693005C7BDF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44C8270B1693005C7BDF /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		752B4492270AC980005C7BDF /* PamagaITer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PamagaITer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752B4495270AC980005C7BDF /* PamagaITerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PamagaITerApp.swift; sourceTree = "<group>"; };
-		752B4497270AC980005C7BDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		752B4499270AC982005C7BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		752B449C270AC982005C7BDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		752B449E270AC982005C7BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		752B44A6270ACE66005C7BDF /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		752B44A9270ACE8B005C7BDF /* StartInterviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInterviewView.swift; sourceTree = "<group>"; };
+		752B44AB270ACE9E005C7BDF /* StartInterviewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInterviewContract.swift; sourceTree = "<group>"; };
+		752B44AD270ACEAE005C7BDF /* StartInterviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInterviewViewModel.swift; sourceTree = "<group>"; };
+		752B44B0270AD08F005C7BDF /* StartInterviewInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInterviewInputView.swift; sourceTree = "<group>"; };
+		752B44B3270AD2C1005C7BDF /* StartInterviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInterviewRouter.swift; sourceTree = "<group>"; };
+		752B44B6270AE0A7005C7BDF /* InterviewQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestionsView.swift; sourceTree = "<group>"; };
+		752B44B9270B0C23005C7BDF /* StartInterviewInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInterviewInputViewModel.swift; sourceTree = "<group>"; };
+		752B44BB270B12D2005C7BDF /* InterviewQuestionsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestionsContract.swift; sourceTree = "<group>"; };
+		752B44BD270B12E3005C7BDF /* InterviewQuestionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestionsRouter.swift; sourceTree = "<group>"; };
+		752B44BF270B12F4005C7BDF /* InterviewQuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestionsViewModel.swift; sourceTree = "<group>"; };
+		752B44C1270B1317005C7BDF /* MainMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuRouter.swift; sourceTree = "<group>"; };
+		752B44C5270B1663005C7BDF /* AppServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServiceContainer.swift; sourceTree = "<group>"; };
+		752B44C8270B1693005C7BDF /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +78,10 @@
 		752B4494270AC980005C7BDF /* PamagaITer */ = {
 			isa = PBXGroup;
 			children = (
+				752B44C4270B164F005C7BDF /* Services */,
+				752B44C3270B163D005C7BDF /* UI Modules */,
 				752B449E270AC982005C7BDF /* Info.plist */,
-				752B44A5270AC98E005C7BDF /* Main menu */,
 				752B44A4270AC989005C7BDF /* App */,
-				752B4497270AC980005C7BDF /* ContentView.swift */,
 			);
 			path = PamagaITer;
 			sourceTree = "<group>";
@@ -81,8 +107,77 @@
 		752B44A5270AC98E005C7BDF /* Main menu */ = {
 			isa = PBXGroup;
 			children = (
+				752B44A6270ACE66005C7BDF /* MainMenuView.swift */,
+				752B44C1270B1317005C7BDF /* MainMenuRouter.swift */,
 			);
 			path = "Main menu";
+			sourceTree = "<group>";
+		};
+		752B44A8270ACE70005C7BDF /* Start Interview */ = {
+			isa = PBXGroup;
+			children = (
+				752B44AF270AD07E005C7BDF /* Views */,
+				752B44A9270ACE8B005C7BDF /* StartInterviewView.swift */,
+				752B44AB270ACE9E005C7BDF /* StartInterviewContract.swift */,
+				752B44AD270ACEAE005C7BDF /* StartInterviewViewModel.swift */,
+				752B44B3270AD2C1005C7BDF /* StartInterviewRouter.swift */,
+			);
+			path = "Start Interview";
+			sourceTree = "<group>";
+		};
+		752B44AF270AD07E005C7BDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				752B44B8270B0C13005C7BDF /* Input */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		752B44B5270AE066005C7BDF /* Interview Questions */ = {
+			isa = PBXGroup;
+			children = (
+				752B44B6270AE0A7005C7BDF /* InterviewQuestionsView.swift */,
+				752B44BB270B12D2005C7BDF /* InterviewQuestionsContract.swift */,
+				752B44BD270B12E3005C7BDF /* InterviewQuestionsRouter.swift */,
+				752B44BF270B12F4005C7BDF /* InterviewQuestionsViewModel.swift */,
+			);
+			path = "Interview Questions";
+			sourceTree = "<group>";
+		};
+		752B44B8270B0C13005C7BDF /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				752B44B0270AD08F005C7BDF /* StartInterviewInputView.swift */,
+				752B44B9270B0C23005C7BDF /* StartInterviewInputViewModel.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		752B44C3270B163D005C7BDF /* UI Modules */ = {
+			isa = PBXGroup;
+			children = (
+				752B44A5270AC98E005C7BDF /* Main menu */,
+				752B44A8270ACE70005C7BDF /* Start Interview */,
+				752B44B5270AE066005C7BDF /* Interview Questions */,
+			);
+			path = "UI Modules";
+			sourceTree = "<group>";
+		};
+		752B44C4270B164F005C7BDF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				752B44C7270B1686005C7BDF /* User */,
+				752B44C5270B1663005C7BDF /* AppServiceContainer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		752B44C7270B1686005C7BDF /* User */ = {
+			isa = PBXGroup;
+			children = (
+				752B44C8270B1693005C7BDF /* UserService.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +249,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				752B4498270AC980005C7BDF /* ContentView.swift in Sources */,
+				752B44C2270B1317005C7BDF /* MainMenuRouter.swift in Sources */,
+				752B44AC270ACE9E005C7BDF /* StartInterviewContract.swift in Sources */,
+				752B44AE270ACEAE005C7BDF /* StartInterviewViewModel.swift in Sources */,
+				752B44B7270AE0A7005C7BDF /* InterviewQuestionsView.swift in Sources */,
+				752B44BA270B0C23005C7BDF /* StartInterviewInputViewModel.swift in Sources */,
+				752B44A7270ACE66005C7BDF /* MainMenuView.swift in Sources */,
 				752B4496270AC980005C7BDF /* PamagaITerApp.swift in Sources */,
+				752B44C6270B1663005C7BDF /* AppServiceContainer.swift in Sources */,
+				752B44BE270B12E3005C7BDF /* InterviewQuestionsRouter.swift in Sources */,
+				752B44BC270B12D2005C7BDF /* InterviewQuestionsContract.swift in Sources */,
+				752B44C0270B12F4005C7BDF /* InterviewQuestionsViewModel.swift in Sources */,
+				752B44C9270B1693005C7BDF /* UserService.swift in Sources */,
+				752B44AA270ACE8B005C7BDF /* StartInterviewView.swift in Sources */,
+				752B44B4270AD2C1005C7BDF /* StartInterviewRouter.swift in Sources */,
+				752B44B1270AD08F005C7BDF /* StartInterviewInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
