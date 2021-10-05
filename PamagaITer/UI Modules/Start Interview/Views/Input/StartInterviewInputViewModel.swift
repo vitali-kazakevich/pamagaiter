@@ -9,17 +9,10 @@ import Combine
 
 final class StartInterviewInputViewModel: ObservableObject, Identifiable {
     let title: String
-    @Published var text: String {
-        didSet {
-            onChange?()
-        }
-    }
+    @Published var text: String
 
-    private let onChange: (() -> Void)?
-
-    init(title: String, text: String, onChange: (() -> Void)? = nil) {
+    init(title: String, text: String) {
         self.title = title
         self.text = text
-        self.onChange = onChange
     }
 }

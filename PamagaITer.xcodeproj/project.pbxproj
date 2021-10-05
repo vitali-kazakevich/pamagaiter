@@ -24,6 +24,12 @@
 		752B44C2270B1317005C7BDF /* MainMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44C1270B1317005C7BDF /* MainMenuRouter.swift */; };
 		752B44C6270B1663005C7BDF /* AppServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44C5270B1663005C7BDF /* AppServiceContainer.swift */; };
 		752B44C9270B1693005C7BDF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44C8270B1693005C7BDF /* UserService.swift */; };
+		752B44ED270C6D1F005C7BDF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44EC270C6D1F005C7BDF /* User.swift */; };
+		752B44F0270C6E13005C7BDF /* InterviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44EF270C6E13005C7BDF /* InterviewService.swift */; };
+		752B44F3270C7C3B005C7BDF /* InterviewQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44F2270C7C3B005C7BDF /* InterviewQuestion.swift */; };
+		752B44F6270C7E92005C7BDF /* QuestionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44F5270C7E92005C7BDF /* QuestionsStorage.swift */; };
+		752B44F8270C8D43005C7BDF /* InterviewQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44F7270C8D43005C7BDF /* InterviewQuestionView.swift */; };
+		752B44FB270C8D5A005C7BDF /* InterviewQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44FA270C8D5A005C7BDF /* InterviewQuestionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,12 @@
 		752B44C1270B1317005C7BDF /* MainMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuRouter.swift; sourceTree = "<group>"; };
 		752B44C5270B1663005C7BDF /* AppServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServiceContainer.swift; sourceTree = "<group>"; };
 		752B44C8270B1693005C7BDF /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		752B44EC270C6D1F005C7BDF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		752B44EF270C6E13005C7BDF /* InterviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewService.swift; sourceTree = "<group>"; };
+		752B44F2270C7C3B005C7BDF /* InterviewQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestion.swift; sourceTree = "<group>"; };
+		752B44F5270C7E92005C7BDF /* QuestionsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsStorage.swift; sourceTree = "<group>"; };
+		752B44F7270C8D43005C7BDF /* InterviewQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestionView.swift; sourceTree = "<group>"; };
+		752B44FA270C8D5A005C7BDF /* InterviewQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +148,7 @@
 		752B44B5270AE066005C7BDF /* Interview Questions */ = {
 			isa = PBXGroup;
 			children = (
+				752B44F9270C8D49005C7BDF /* Views */,
 				752B44B6270AE0A7005C7BDF /* InterviewQuestionsView.swift */,
 				752B44BB270B12D2005C7BDF /* InterviewQuestionsContract.swift */,
 				752B44BD270B12E3005C7BDF /* InterviewQuestionsRouter.swift */,
@@ -166,6 +179,7 @@
 		752B44C4270B164F005C7BDF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				752B44EE270C6DF5005C7BDF /* Interview */,
 				752B44C7270B1686005C7BDF /* User */,
 				752B44C5270B1663005C7BDF /* AppServiceContainer.swift */,
 			);
@@ -176,8 +190,52 @@
 			isa = PBXGroup;
 			children = (
 				752B44C8270B1693005C7BDF /* UserService.swift */,
+				752B44EC270C6D1F005C7BDF /* User.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		752B44EE270C6DF5005C7BDF /* Interview */ = {
+			isa = PBXGroup;
+			children = (
+				752B44F4270C7E52005C7BDF /* Questions */,
+				752B44EF270C6E13005C7BDF /* InterviewService.swift */,
+				752B44F2270C7C3B005C7BDF /* InterviewQuestion.swift */,
+			);
+			path = Interview;
+			sourceTree = "<group>";
+		};
+		752B44F4270C7E52005C7BDF /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				752B44F5270C7E92005C7BDF /* QuestionsStorage.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		752B44F9270C8D49005C7BDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				752B44FD270C8DC6005C7BDF /* Grade */,
+				752B44FC270C8DBE005C7BDF /* Question */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		752B44FC270C8DBE005C7BDF /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				752B44F7270C8D43005C7BDF /* InterviewQuestionView.swift */,
+				752B44FA270C8D5A005C7BDF /* InterviewQuestionViewModel.swift */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		752B44FD270C8DC6005C7BDF /* Grade */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Grade;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,13 +310,19 @@
 				752B44C2270B1317005C7BDF /* MainMenuRouter.swift in Sources */,
 				752B44AC270ACE9E005C7BDF /* StartInterviewContract.swift in Sources */,
 				752B44AE270ACEAE005C7BDF /* StartInterviewViewModel.swift in Sources */,
+				752B44F3270C7C3B005C7BDF /* InterviewQuestion.swift in Sources */,
 				752B44B7270AE0A7005C7BDF /* InterviewQuestionsView.swift in Sources */,
+				752B44F6270C7E92005C7BDF /* QuestionsStorage.swift in Sources */,
+				752B44ED270C6D1F005C7BDF /* User.swift in Sources */,
 				752B44BA270B0C23005C7BDF /* StartInterviewInputViewModel.swift in Sources */,
 				752B44A7270ACE66005C7BDF /* MainMenuView.swift in Sources */,
 				752B4496270AC980005C7BDF /* PamagaITerApp.swift in Sources */,
 				752B44C6270B1663005C7BDF /* AppServiceContainer.swift in Sources */,
 				752B44BE270B12E3005C7BDF /* InterviewQuestionsRouter.swift in Sources */,
 				752B44BC270B12D2005C7BDF /* InterviewQuestionsContract.swift in Sources */,
+				752B44F0270C6E13005C7BDF /* InterviewService.swift in Sources */,
+				752B44FB270C8D5A005C7BDF /* InterviewQuestionViewModel.swift in Sources */,
+				752B44F8270C8D43005C7BDF /* InterviewQuestionView.swift in Sources */,
 				752B44C0270B12F4005C7BDF /* InterviewQuestionsViewModel.swift in Sources */,
 				752B44C9270B1693005C7BDF /* UserService.swift in Sources */,
 				752B44AA270ACE8B005C7BDF /* StartInterviewView.swift in Sources */,

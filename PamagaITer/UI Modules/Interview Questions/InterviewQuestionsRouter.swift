@@ -9,6 +9,10 @@ import SwiftUI
 
 final class InterviewQuestionsRouter {
     func makeView() -> some View {
-        return InterviewQuestionsView()
+        return InterviewQuestionsView(
+            viewModel: InterviewQuestionsViewModel(
+                dependencies: .init(interviewService: AppServiceContainer.shared.resolveDependency())
+            )
+        )
     }
 }

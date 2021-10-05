@@ -9,7 +9,10 @@ import SwiftUI
 
 final class StartInterviewRouter {
     func makeView() -> some View {
-        return StartInterviewView(viewModel: StartInterviewViewModel(), router: self)
+        return StartInterviewView(
+            viewModel: StartInterviewViewModel(
+                dependencies: .init(interviewService: AppServiceContainer.shared.resolveDependency())),
+            router: self)
     }
 }
 

@@ -8,3 +8,9 @@
 import Combine
 
 protocol UserService {}
+
+final class AppUserService {
+    @Published var currentUser: User?
+}
+
+extension AppUserService: UserService {}

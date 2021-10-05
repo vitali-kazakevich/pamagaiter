@@ -7,14 +7,28 @@
 
 import SwiftUI
 
-struct InterviewQuestionsView: View {
+struct InterviewQuestionsView<ViewModel>: View where ViewModel: InterviewQuestionsViewModelProtocol {
+    @ObservedObject private var viewModel: ViewModel
+
+    init(viewModel: ViewModel) {
+        self.viewModel = viewModel
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+//            Text(viewModel.currentQuestion?.text)
+        }
     }
 }
 
 struct InterviewQuestionsView_Previews: PreviewProvider {
     static var previews: some View {
-        InterviewQuestionsView()
+        InterviewQuestionsView(viewModel: MockViewModel())
     }
+}
+
+private final class MockViewModel: InterviewQuestionsViewModelProtocol {
+    let currentQuestion: InterviewQuestionViewModel? = .init(text: "Good question?", level: "hard", domain: "iOS")
+    let grade: GradeViewModel? = .great
+    func submit() {}
 }
