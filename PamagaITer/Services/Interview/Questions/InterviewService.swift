@@ -10,10 +10,11 @@ import Combine
 protocol InterviewService {
     var currentCandidate: AnyPublisher<User?, Never> { get }
     var progress: AnyPublisher<Double, Never> { get }
-    var currentQuestion: AnyPublisher<InterviewQuestion?, Never> { get }
+    var currentQuestion: AnyPublisher<InterviewQuestion, Never> { get }
 
     func startInterview(for candidate: User)
     func endInterview()
+    func append(grade: InterviewQuestionGrade)
 }
 
 extension AppInterviewService {
@@ -23,38 +24,46 @@ extension AppInterviewService {
 }
 
 final class AppInterviewService {
-    private let currentCandidateSubject = CurrentValueSubject<User?, Never>(nil)
-    private let progressSubject = CurrentValueSubject<Double, Never>(0)
-    private let currentQuestionSubject: CurrentValueSubject<InterviewQuestion?, Never>
+    @Published private var currentCandidateSubject: User?
+    @Published private var progressSubject: Double = 0
+    @Published private var currentQuestionSubject: InterviewQuestion
     private let dependencies: Dependencies
 
     private let allQuestions: [InterviewQuestion]
+    private var currentResult: [(InterviewQuestion, InterviewQuestionGrade)] = []
 
     init(dependencies: Dependencies) {
         self.dependencies = dependencies
         allQuestions = dependencies.questionStorage.allQuestions.sorted { $0.level > $1.level }
-        currentQuestionSubject = .init(allQuestions[0])
+        currentQuestionSubject = allQuestions[0]
     }
 }
 
 extension AppInterviewService: InterviewService {
     var currentCandidate: AnyPublisher<User?, Never> {
-        currentCandidateSubject.eraseToAnyPublisher()
+        $currentCandidateSubject.eraseToAnyPublisher()
     }
 
     var progress: AnyPublisher<Double, Never> {
-        progressSubject.eraseToAnyPublisher()
+        $progressSubject.eraseToAnyPublisher()
     }
 
-    var currentQuestion: AnyPublisher<InterviewQuestion?, Never> {
-        currentQuestionSubject.eraseToAnyPublisher()
+    var currentQuestion: AnyPublisher<InterviewQuestion, Never> {
+        $currentQuestionSubject.eraseToAnyPublisher()
+    }
+    
+    func append(grade: InterviewQuestionGrade) {
+        currentResult.append((currentQuestionSubject, grade))
     }
 
     func startInterview(for candidate: User) {
-        currentCandidateSubject.value = candidate
+        currentCandidateSubject = candidate
+        currentResult = []
     }
 
     func endInterview() {
-        currentCandidateSubject.value = nil
+        currentCandidateSubject = nil
+        // calculate result
+        currentResult = []
     }
 }

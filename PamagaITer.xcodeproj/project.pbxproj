@@ -30,6 +30,7 @@
 		752B44F6270C7E92005C7BDF /* QuestionsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44F5270C7E92005C7BDF /* QuestionsStorage.swift */; };
 		752B44F8270C8D43005C7BDF /* InterviewQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44F7270C8D43005C7BDF /* InterviewQuestionView.swift */; };
 		752B44FB270C8D5A005C7BDF /* InterviewQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B44FA270C8D5A005C7BDF /* InterviewQuestionViewModel.swift */; };
+		B06E032F271614ED0088FBCE /* InterviewGradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06E032E271614ED0088FBCE /* InterviewGradeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		752B44F5270C7E92005C7BDF /* QuestionsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsStorage.swift; sourceTree = "<group>"; };
 		752B44F7270C8D43005C7BDF /* InterviewQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestionView.swift; sourceTree = "<group>"; };
 		752B44FA270C8D5A005C7BDF /* InterviewQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQuestionViewModel.swift; sourceTree = "<group>"; };
+		B06E032E271614ED0088FBCE /* InterviewGradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewGradeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,8 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				752B44F4270C7E52005C7BDF /* Questions */,
-				752B44EF270C6E13005C7BDF /* InterviewService.swift */,
-				752B44F2270C7C3B005C7BDF /* InterviewQuestion.swift */,
 			);
 			path = Interview;
 			sourceTree = "<group>";
@@ -208,6 +208,8 @@
 		752B44F4270C7E52005C7BDF /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				752B44F2270C7C3B005C7BDF /* InterviewQuestion.swift */,
+				752B44EF270C6E13005C7BDF /* InterviewService.swift */,
 				752B44F5270C7E92005C7BDF /* QuestionsStorage.swift */,
 			);
 			path = Questions;
@@ -216,7 +218,7 @@
 		752B44F9270C8D49005C7BDF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				752B44FD270C8DC6005C7BDF /* Grade */,
+				B06E032D271614D70088FBCE /* Grade */,
 				752B44FC270C8DBE005C7BDF /* Question */,
 			);
 			path = Views;
@@ -231,9 +233,10 @@
 			path = Question;
 			sourceTree = "<group>";
 		};
-		752B44FD270C8DC6005C7BDF /* Grade */ = {
+		B06E032D271614D70088FBCE /* Grade */ = {
 			isa = PBXGroup;
 			children = (
+				B06E032E271614ED0088FBCE /* InterviewGradeView.swift */,
 			);
 			path = Grade;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				752B4496270AC980005C7BDF /* PamagaITerApp.swift in Sources */,
 				752B44C6270B1663005C7BDF /* AppServiceContainer.swift in Sources */,
 				752B44BE270B12E3005C7BDF /* InterviewQuestionsRouter.swift in Sources */,
+				B06E032F271614ED0088FBCE /* InterviewGradeView.swift in Sources */,
 				752B44BC270B12D2005C7BDF /* InterviewQuestionsContract.swift in Sources */,
 				752B44F0270C6E13005C7BDF /* InterviewService.swift in Sources */,
 				752B44FB270C8D5A005C7BDF /* InterviewQuestionViewModel.swift in Sources */,
